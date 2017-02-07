@@ -1,0 +1,81 @@
+<config>
+    <sections>
+        <general>
+            <groups>
+                <lcb_openhours translate="label">
+                    <label>Working days and hours</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <monday translate="label">
+                            <label>Monday</label>
+                            <frontend_type>text</frontend_type>                      
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>0</can_be_empty>
+                        </monday>
+                        <tuesday translate="label">
+                            <label>Tuesday</label>
+                            <frontend_type>text</frontend_type>                      
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>0</can_be_empty>
+                        </tuesday>
+                        <wednesday translate="label">
+                            <label>Wednesday</label>
+                            <frontend_type>text</frontend_type>                      
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>0</can_be_empty>
+                        </wednesday>
+                        <thursday translate="label">
+                            <label>Thursday</label>
+                            <frontend_type>text</frontend_type>                      
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>0</can_be_empty>
+                        </thursday>
+                        <friday translate="label">
+                            <label>Friday</label>
+                            <frontend_type>text</frontend_type>                      
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>0</can_be_empty>
+                        </friday> 
+                        <saturday translate="label">
+                            <label>Saturday</label>
+                            <frontend_type>text</frontend_type>                      
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>0</can_be_empty>
+                        </saturday> 
+                        <sunday translate="label">
+                            <label>Sunday</label>
+                            <frontend_type>text</frontend_type>                      
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>0</can_be_empty>
+                        </sunday>                        
+                    </fields>
+                </lcb_openhours>
+            </groups>
+        </general>
+    </sections>
+</config>

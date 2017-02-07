@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <LCB_OpenHours>
+      <version>0.1.0</version>
+    </LCB_OpenHours>
+  </modules>
+  <global>
+    <helpers>
+      <openhours>
+        <class>LCB_OpenHours_Helper</class>
+      </openhours>
+    </helpers>
+  </global>
+</config> 
