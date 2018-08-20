@@ -18,22 +18,30 @@ class LCB_OpenHours_Block_Hours extends Mage_Core_Block_Template{
     public function getOpenHours(){
 
         return [
-            'Monday' => $this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_MONDAY_CONFIG_PATH),
-            'Tuesday' => $this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_TUESDAY_CONFIG_PATH),
-            'Wednesday' => $this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_WEDNESDAY_CONFIG_PATH),
-            'Thursday' => $this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_THURSDAY_CONFIG_PATH),
-            'Friday' => $this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_FRIDAY_CONFIG_PATH),
-            'Saturday' => $this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_SATURDAY_CONFIG_PATH),
-            'Sunday' => $this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_SUNDAY_CONFIG_PATH)
+            'Monday' => $this->isCLosed($this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_MONDAY_CONFIG_PATH)),
+            'Tuesday' => $this->isCLosed($this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_TUESDAY_CONFIG_PATH)),
+            'Wednesday' => $this->isCLosed($this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_WEDNESDAY_CONFIG_PATH)),
+            'Thursday' => $this->isCLosed($this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_THURSDAY_CONFIG_PATH)),
+            'Friday' => $this->isCLosed($this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_FRIDAY_CONFIG_PATH)),
+            'Saturday' => $this->isCLosed($this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_SATURDAY_CONFIG_PATH)),
+            'Sunday' => $this->isCLosed($this->getConfigValue(LCB_OpenHours_Helper_Config::OPEN_HOURS_SUNDAY_CONFIG_PATH))
         ];
     }
 
     /**
-     * @param $path
      * @return string
      */
-    protected function getConfigValue($path){
-        return $this->isCLosed(Mage::helper('openhours/config')->getConfig($path));
+    public function getPhoneValue(){
+        return $this->getConfigValue(LCB_OpenHours_Helper_Config::STORE_PHONE_CONFIG_PATH);
+    }
+
+    /**
+     * @param      $path
+     * @param bool $isPhone
+     * @return mixed
+     */
+    protected function getConfigValue($path , $isPhone = false){
+       return  Mage::helper('openhours/config')->getConfig($path);
     }
 
     /**
