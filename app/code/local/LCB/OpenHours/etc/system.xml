@@ -17,7 +17,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <can_be_empty>0</can_be_empty>
+                            <can_be_empty>1</can_be_empty>
+                            <comment>Leave empty for closed</comment>
                         </monday>
                         <tuesday translate="label">
                             <label>Tuesday</label>
@@ -26,7 +27,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <can_be_empty>0</can_be_empty>
+                            <can_be_empty>1</can_be_empty>
+                            <comment>Leave empty for closed</comment>
                         </tuesday>
                         <wednesday translate="label">
                             <label>Wednesday</label>
@@ -35,7 +37,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <can_be_empty>0</can_be_empty>
+                            <can_be_empty>1</can_be_empty>
+                            <comment>Leave empty for closed</comment>
                         </wednesday>
                         <thursday translate="label">
                             <label>Thursday</label>
@@ -44,7 +47,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <can_be_empty>0</can_be_empty>
+                            <can_be_empty>1</can_be_empty>
+                            <comment>Leave empty for closed</comment>
                         </thursday>
                         <friday translate="label">
                             <label>Friday</label>
@@ -53,7 +57,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <can_be_empty>0</can_be_empty>
+                            <can_be_empty>1</can_be_empty>
+                            <comment>Leave empty for closed</comment>
                         </friday> 
                         <saturday translate="label">
                             <label>Saturday</label>
@@ -62,7 +67,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <can_be_empty>0</can_be_empty>
+                            <can_be_empty>1</can_be_empty>
+                            <comment>Leave empty for closed</comment>
                         </saturday> 
                         <sunday translate="label">
                             <label>Sunday</label>
@@ -71,7 +77,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <can_be_empty>0</can_be_empty>
+                            <can_be_empty>1</can_be_empty>
+                            <comment>Leave empty for closed</comment>
                         </sunday>                        
                     </fields>
                 </lcb_openhours>

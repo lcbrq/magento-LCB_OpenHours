@@ -1,2 +1,4 @@
 app/code/local/LCB/OpenHours                               app/code/local/LCB/OpenHours
 app/etc/modules/LCB_OpenHours.xml                          app/etc/modules/LCB_OpenHours.xml
+app/code/design/frontend/base/default/template/lcb         app/code/design/frontend/base/default/template/lcb
+app/locale/pl_PL/LCB_OpenHours.csv                         app/code/locale/pl_PL/LCB_OpenHours.csv

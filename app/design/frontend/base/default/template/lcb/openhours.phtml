@@ -1,0 +1,13 @@
+<?php
+/** @var \LCB_OpenHours_Block_Hours $block */
+$block = $this;
+
+$hours = $block->getOpenHours();
+
+?>
+
+<div class="openhours-wrapper">
+    <?php foreach ($hours as $day => $hour) { ?>
+        <li><?php echo $block->__($day);?>: <?php echo $hour ?></li>
+    <?php } ?>
+</div>

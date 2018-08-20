@@ -6,10 +6,21 @@
     </LCB_OpenHours>
   </modules>
   <global>
+
+    <!-- BLocks -->
+    <blocks>
+      <openhours>
+        <class>LCB_OpenHours_Block</class>
+      </openhours>
+    </blocks>
+
+    <!-- Helpers -->
     <helpers>
       <openhours>
         <class>LCB_OpenHours_Helper</class>
       </openhours>
     </helpers>
+
+
   </global>
 </config> 
