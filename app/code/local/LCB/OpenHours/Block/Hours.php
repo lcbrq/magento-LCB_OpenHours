@@ -30,10 +30,21 @@ class LCB_OpenHours_Block_Hours extends Mage_Core_Block_Template{
 
     /**
      * @param $path
-     * @return mixed
+     * @return string
      */
     protected function getConfigValue($path){
-        return Mage::helper('openhours/config')->getConfig($path);
+        return $this->isCLosed(Mage::helper('openhours/config')->getConfig($path));
+    }
+
+    /**
+     * @param $value
+     * @return string
+     */
+    public function isClosed($value){
+        if(!$value || $value == ''){
+            return $this->__('Closed');
+        }
+        return $value;
     }
 
 }
